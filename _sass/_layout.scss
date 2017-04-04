@@ -13,8 +13,9 @@
 .mdl-card {
   .mdl-card__title {
     color: #fff;
-    height: 176px;
+    height: 200px;
     background: url('../img/welcome_card.jpg') center / cover;
+    border-radius: 2px 2px 0 0;
   }
 
   .mdl-card__supporting-text > span { color: #9F9F9F; }
@@ -22,6 +23,13 @@
   .mdl-card__menu {
     color: #fff;
   }
+  .mdl-card__title-text {
+    font-weight: 400;
+  }
+  transition: box-shadow 300ms;
+}
+.mdl-card:hover {
+  box-shadow: 0 0px 20px 0px rgba(0,0,0,.10);
 }
 
 .post-button{
@@ -35,6 +43,7 @@
 .section-highlight {
   position: relative;
   margin: 10px;
+  border-radius: 2px;
 
   .mdl-card__supporting-text {
     margin: 40px;
@@ -69,6 +78,7 @@
     justify-content: center;
     min-height: 200px;
     background: url('../img/welcome_card.jpg') center / cover;
+    border-radius: 2px 0 0 2px;
   }
 
   button {
@@ -78,4 +88,22 @@
     right: 8px;
   }
 
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h5 {
+  font-weight: 300;
+}
+p {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.mdl-shadow--2dp {
+  box-shadow: 0 0px 2px 0px rgba(0,0,0,.15);
 }

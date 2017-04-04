@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,10 @@
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://localhost:4000/feed.xml" />
 
   <!-- Material Design Lite css Library -->
-  <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
-  
+  <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-red.min.css">
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300" type="text/css">
+
   <!-- Material Design Fonts -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -23,72 +25,35 @@
 </head>
 
 
-  <body>
+<body>
 
-    <!-- Start Layout -->
-    
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <!-- search layout -->
-<div class="super-search" id="js-search">
-  <ul class="super-search__results" id="js-search__results"></ul>        
-  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored super-search__close-btn" onclick="superSearch.toggle()">
-    <i class="material-icons">close</i>
-  </button>
-</div>
-<!-- /end search -->
-        <header class="mdl-layout__header">
 
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+<!-- <div class="page-content"> -->
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Your awesome title</span>
+      <span class="mdl-layout-title">
+        <a href="index.htm">
+          <img src="img/logo.svg" id="logo" alt="Geeks & Places" width="34">
+        </a>
+      </span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
-      
-
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded">
-        <label class="mdl-button mdl-js-button mdl-button--icon" for="js-search__input">
-          <i class="material-icons">search</i>
-        </label>
-
-        <div class="mdl-textfield__expandable-holder" >
-          <input class="mdl-textfield__input super-search__input" type="text" id="js-search__input" />
-        </div>
+      <!-- Menu -->
+      <div class="navbar-menu">
+        <a href="#" class="mdl-color-text--grey-600">Blog</a>
+        <a href="#" class="mdl-color-text--grey-600">About</a>
+        <a href="#" class="mdl-color-text--grey-600">Destinations</a>
+        <a href="#" class="mdl-color-text--accent">Subscribe</a>
       </div>
-
-      <button class="mdl-button mdl-js-button mdl-button--icon" id="menu-lower-left">
-        <i class="material-icons">more_vert</i>
-      </button>
-
-      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-left">
-        
-        <li><a href="www.myawesomelink.com" class="mdl-menu__item">Cool Option 1</a></li>
-        
-        <li><a href="www.myawesomelink.com" class="mdl-menu__item">Cool Option 2</a></li>
-        
-        <li><a href="www.myawesomelink.com" class="mdl-menu__item">Cool Option 3</a></li>
-        
-      </ul>
     </div>
-  </header>
-
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Menu</span>
-    <nav class="mdl-navigation">
-    
-      
-      <a class="mdl-navigation__link" href="/about/">About</a>
-      
-    
-      
-    
-      
-    
-    </nav>
-
   </div>
+<!-- </div> -->
+</header>
 
+<br><br><br><br>
 
-    
 
     <div class="post-ribbon"></div>
 <main class="post-main mdl-layout__content">
@@ -99,7 +64,7 @@
       Sep 11, 2015 • Byron Corrales •  Material  
       </div>
       <h3>Material Design Lite</h3>
-      <article class="post-content">
+      <article class="post-content mdl-color-text--grey-700">
         <p><p>But it’s not who you are underneath… it’s what you do that defines you. Death does not wait for you to be ready! Death is not considerate of fair! And make no mistake, here you face death. Tiger. Jujitsu. Panther. You’re skilled. But this is not a dance. And you are afraid.</p>
 
 <p>Theatricality and deception, powerful agents to the uninitiated. But we are initiated aren’t we, Bruce? Members of the League of Shadows. And you betrayed us.</p>
@@ -151,6 +116,7 @@
     </div>
   </div>
 </main>
+
 
     <footer class="mdl-mega-footer">
   <div class="mdl-mega-footer--middle-section">
@@ -260,22 +226,11 @@
 
 </footer>
 
+  </div>
 
-    </div>
-    <!-- /End Layout -->
-
-    <!-- Material Design Lite js Library -->
-    <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
-    
-    <script rel="javascript" type="text/javascript" src="/js/search.js"></script>
-    <script rel="javascript" type="text/javascript">
-      superSearch({
-        searchFile: '/feed.xml',
-        searchSelector: '#js-search', // CSS Selector for search container element.
-        inputSelector: '#js-search__input', // CSS selector for <input>
-        resultsSelector: '#js-search__results' // CSS selector for results container
-      });
-    </script>
-  </body>
+  <!-- Material Design Lite js Library -->
+  <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+  
+</body>
 
 </html>

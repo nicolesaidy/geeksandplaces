@@ -59,14 +59,22 @@ pre {
   max-width: 1200px;
   margin: 0 auto; }
 
-.mdl-card .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url("../img/welcome_card.jpg") center/cover; }
-.mdl-card .mdl-card__supporting-text > span {
-  color: #9F9F9F; }
-.mdl-card .mdl-card__menu {
-  color: #fff; }
+.mdl-card {
+  transition: box-shadow 300ms; }
+  .mdl-card .mdl-card__title {
+    color: #fff;
+    height: 200px;
+    background: url("../img/welcome_card.jpg") center/cover;
+    border-radius: 2px 2px 0 0; }
+  .mdl-card .mdl-card__supporting-text > span {
+    color: #9F9F9F; }
+  .mdl-card .mdl-card__menu {
+    color: #fff; }
+  .mdl-card .mdl-card__title-text {
+    font-weight: 400; }
+
+.mdl-card:hover {
+  box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.1); }
 
 .post-button {
   position: absolute;
@@ -75,7 +83,8 @@ pre {
 
 .section-highlight {
   position: relative;
-  margin: 10px; }
+  margin: 10px;
+  border-radius: 2px; }
   .section-highlight .mdl-card__supporting-text {
     margin: 40px;
     -webkit-box-flex: 1;
@@ -104,12 +113,37 @@ pre {
     -ms-flex-pack: center;
     justify-content: center;
     min-height: 200px;
-    background: url("../img/welcome_card.jpg") center/cover; }
+    background: url("../img/welcome_card.jpg") center/cover;
+    border-radius: 2px 0 0 2px; }
   .section-highlight button {
     position: absolute;
     z-index: 99;
     top: 8px;
     right: 8px; }
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+h5 {
+  font-weight: 300; }
+
+p {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 300; }
+
+.mdl-shadow--2dp {
+  box-shadow: 0 0px 2px 0px rgba(0, 0, 0, 0.15); }
+
+.navbar-menu a {
+  text-decoration: none;
+  padding-left: 15px; }
+
+.mdl-layout__header {
+  background-color: white;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15); }
 
 /**
  * Syntax highlighting styles
@@ -275,57 +309,11 @@ pre {
     width: 100%;
     height: auto; }
 
-/* super-search
-Author: Kushagra Gour (http://kushagragour.in)
-MIT Licensed
-*/
-.super-search {
-  background-color: rgba(0, 191, 255, 0.85);
-  z-index: 999;
-  transition: 0.2s ease;
-  visibility: hidden;
-  opacity: 0;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  will-change: transform, opacity; }
+.home-intro {
+  margin-bottom: 40px;
+  margin-top: 30px; }
+  .home-intro h5 {
+    margin-top: 20px; }
 
-.super-search__close-btn {
-  float: right;
-  margin-right: 15px; }
-
-.super-search__input {
-  transition: 0.15s ease-out 150ms; }
-
-.is-active .super-search__input {
-  transform: translateY(0); }
-
-.super-search__results {
-  text-align: center;
-  list-style: none;
-  padding: 0;
-  overflow-x: hidden;
-  height: calc(100% - 110px);
-  transition: 0.2s ease; }
-
-.super-search__results.is-hidden {
-  opacity: 0;
-  transform: translateY(-1vh); }
-
-.super-search__results > li > a {
-  display: block;
-  position: relative;
-  background-color: #f9f9f9;
-  color: #666;
-  padding: 17px;
-  margin: 12px 14px;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1); }
-
-.super-search__result-date {
-  color: #BBB;
-  position: absolute;
-  right: 12px; }
-
-.super-search.is-active {
-  opacity: 1;
-  visibility: visible; }
+.home-introContainer {
+  margin: 0; }
