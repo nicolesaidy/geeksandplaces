@@ -1,13 +1,35 @@
+
 .home-intro {
-  margin-bottom: 40px;
   margin-top: 30px;
-  h3 {
+  h1 {
   }
   h5 {
     margin-top: 20px;
+  }
+  a:hover {
+    color: $grey-color !important;
   }
 }
 
 .home-introContainer {
   margin: 0;
+
+}
+
+.home-wrapper {
+  background-color: #FAFAFA;
+  .content-wrapper .mdl-grid {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .page-content {
+    margin-bottom: 80px;
+  }
+  .mdl-card a:hover {
+    color: #ff5252 !important;
+  }
+  .mdl-card a {
+    transition: color 200ms;
+  }
 }

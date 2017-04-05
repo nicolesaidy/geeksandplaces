@@ -1,9 +1,31 @@
 .navbar-menu a {
-  text-decoration: none;
-  padding-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.mdl-layout__header {
+.navbar-menu a:last-child {
+  padding-right: 0;
+}
+.navbar-menu a:hover {
+  color: $grey-color !important;
+}
+
+.navbar-menu .mdl-color-text--accent:hover {
+  color: hsla(0, 100%, 50%, 1) !important;
+}
+
+.header-wrapper {
   background-color: white;
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+  padding: 20px 0 ;
+
+  .mdl-layout__header{
+    background-color: white;
+    box-shadow: none;
+  }
+
+  .mdl-layout__header-row{
+    padding: 0 18px;
+  }
 }

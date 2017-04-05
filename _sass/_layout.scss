@@ -2,15 +2,54 @@
 // Generals styles for material design light elements
 //
 
+.content-wrapper {
+  background-color: white;
+  margin-bottom: -70px;
+  padding-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mdl-color-text--grey-800 {
+  color: $grey-color !important;
+}
+.mdl-color-text--grey-900 {
+  color: darken($grey-color, 25%) !important;
+}
+
+.mdl-color-text--grey-600 {
+  color: #5B6B7F !important;
+}
+.mdl-color-text--grey-500 {
+  color: #a4b1c1 !important;
+}
+
 // Page container
 
 .page-content{
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 // Cards styles
 .mdl-card {
+  transition: box-shadow 300ms;
+  width: auto;
+
+  // .mdl-card:first-child {
+  //   margin-right: 10px;
+  // }
+
+  // .mdl-card:last-child {
+  //   margin-left: 10px;
+  // }
+
+  .mdl-card__supporting-text {
+    padding: 30px;
+  }
+
   .mdl-card__title {
     color: #fff;
     height: 200px;
@@ -18,15 +57,15 @@
     border-radius: 2px 2px 0 0;
   }
 
-  .mdl-card__supporting-text > span { color: #9F9F9F; }
+  .mdl-card__supporting-text > span { color: #a4b1c1; }
 
   .mdl-card__menu {
     color: #fff;
   }
   .mdl-card__title-text {
-    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
-  transition: box-shadow 300ms;
 }
 .mdl-card:hover {
   box-shadow: 0 0px 20px 0px rgba(0,0,0,.10);
@@ -54,6 +93,7 @@
     padding: 0;
     color: inherit;
     width: calc(100% - 80px);
+
   }
 
   .mdl-card__actions {
@@ -91,19 +131,37 @@
 }
 
 body {
-  background-color: #FAFAFA;
   font-family: 'Roboto', 'Helvetica', sans-serif;
   -webkit-font-smoothing: antialiased;
+  line-height: 1.20;
 }
 
+
+h1,h2,h3,h4 {
+  font-family: 'Lato', 'Helvetica', serif;
+  font-weight: 700 !important;
+  letter-spacing: -0.30px;
+  word-spacing: -0.10px;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px !important;
+  letter-spacing: -0.5px;
+}
 h5 {
   font-weight: 300;
 }
 p {
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 18px;
   font-weight: 300;
+  line-height: 1.7;
 }
 .mdl-shadow--2dp {
   box-shadow: 0 0px 2px 0px rgba(0,0,0,.15);
 }
+
