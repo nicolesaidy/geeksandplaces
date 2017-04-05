@@ -197,7 +197,8 @@ p {
   padding: 20px 0; }
   .header-wrapper .mdl-layout__header {
     background-color: white;
-    box-shadow: none; }
+    box-shadow: none;
+    display: block; }
   .header-wrapper .mdl-layout__header-row {
     padding: 0 18px; }
 

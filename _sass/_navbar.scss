@@ -23,6 +23,7 @@
   .mdl-layout__header{
     background-color: white;
     box-shadow: none;
+    display: block;//so that it's not hidden on mobile
   }
 
   .mdl-layout__header-row{
