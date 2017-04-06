@@ -1,0 +1,14 @@
+#subscribe-modal{
+    position: fixed;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%; 
+    background-color: white;
+    z-index: 99999;
+    display: none;
+}
+
+#subscribe-modal.show{
+    display: block;
+}
