@@ -29,12 +29,32 @@
 <body class="subscribe">
 
       <style>
-    body{
-        background-color: white;
+    body {
         overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .mdl-textfield__input {
+        outline: none;
+        transition: border-color 150ms;
+    }
+    
+    .mdl-textfield__input:focus {
+        border-bottom: 1px solid rgba(0, 0, 0, .20);
+    }
+    #subscribe-email{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #submit{
+        margin-left: 20px;
     }
 </style>
-<form class="ml-block-form" action="//app.mailerlite.com/webforms/submit/w6k4n9" data-id="366045" data-code="w6k4n9" method="POST">
+<form onsubmit="hideModal()" class="ml-block-form" action="//app.mailerlite.com/webforms/submit/w6k4n9" data-id="366045" data-code="w6k4n9" method="POST">
 
     <div class="ml-subscribe-close"></div>
     <div class="subscribe-form">
@@ -42,20 +62,30 @@
             <h4>Subscribe</h4>
             <p>Signup for news and special offers!</p>
         </div>
-        <div class="form-section">
-            <div class="form-group ml-field-email ml-validate-required ml-validate-email">
-                <input type="email" name="fields[email]" class="form-control" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email"
-                    spellcheck="false" autocapitalize="off" autocorrect="off">
+
+        <div id="subscribe-email">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input form-control" type="email" name="fields[email]" placeholder="Email" value="" autocomplete="email"
+                    x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off">
             </div>
+
+            <button type="submit" id="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Subscribe</button>
         </div>
+
         <input type="hidden" name="ml-submit" value="1">
 
-        <button type="submit" class="primary">Subscribe</button>
         <button disabled="disabled" style="display: none;" type="button" class="loading">
             <img src="//static.mailerlite.com/images/rolling.gif" width="20" height="20" style="width: 20px; height: 20px;">
         </button>
     </div>
 </form>
+
+<script>
+    function hideModal(){
+        console.log('hide modal');
+        window.parent.document.querySelector('#subscribe-modal iframe').style.display = "hidden";
+    }
+</script>
 
 </body>
 

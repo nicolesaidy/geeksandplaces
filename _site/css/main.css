@@ -404,7 +404,8 @@ p {
   right: 20%;
   background-color: white;
   z-index: 99999;
-  display: none; }
+  display: none;
+  border-radius: 4px; }
 
 #subscribe-modal.show {
   display: block; }
