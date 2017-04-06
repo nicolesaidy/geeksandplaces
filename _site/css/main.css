@@ -55,10 +55,12 @@ pre {
   .icon > svg path {
     fill: #3c4858; }
 
-.content-wrapper {
+.cover-wrapper {
   background-color: white;
-  margin-bottom: -70px;
-  padding-bottom: 50px; }
+  margin-bottom: -120px;
+  padding-bottom: 80px;
+  border-bottom-left-radius: 55% 40px;
+  border-bottom-right-radius: 55% 40px; }
 
 a {
   text-decoration: none; }
@@ -150,7 +152,7 @@ body {
   -webkit-font-smoothing: antialiased;
   line-height: 1.20; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', 'Helvetica', serif;
   font-weight: 700 !important;
   letter-spacing: -0.30px;
@@ -166,9 +168,6 @@ h3 {
   font-size: 28px !important;
   letter-spacing: -0.5px; }
 
-h5 {
-  font-weight: 300; }
-
 p {
   font-size: 18px;
   font-weight: 300;
@@ -181,12 +180,25 @@ p {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  transition: color 200ms; }
 
 .navbar-menu a:last-child {
   padding-right: 0; }
 
 .navbar-menu a:hover {
+  color: #3c4858 !important; }
+
+#logo-text {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 12px; }
+
+#logo-wrapper {
+  display: flex;
+  align-items: center; }
+
+#logo-wrapper:hover #logo-text {
   color: #3c4858 !important; }
 
 .navbar-menu .mdl-color-text--accent:hover {
@@ -359,12 +371,14 @@ p {
     margin-bottom: 20px; }
   .post-main .post-header {
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 80px;
+    margin-top: 80px; }
 
 .home-intro {
-  margin-top: 30px; }
-  .home-intro h5 {
-    margin-top: 20px; }
+  margin-top: 50px;
+  margin-bottom: 30px; }
+  .home-intro p {
+    font-size: 22px; }
   .home-intro a:hover {
     color: #3c4858 !important; }
 
@@ -372,8 +386,8 @@ p {
   margin: 0; }
 
 .home-wrapper {
-  background-color: #FAFAFA; }
-  .home-wrapper .content-wrapper .mdl-grid {
+  background-color: #F1F4F9; }
+  .home-wrapper .cover-wrapper .mdl-grid {
     display: flex;
     text-align: center;
     justify-content: center; }
@@ -386,15 +400,44 @@ p {
 
 .mdl-mega-footer {
   background-color: #1f2d3d;
-  padding-left: 8px;
-  padding-right: 8px; }
+  padding: 30px 8px; }
   .mdl-mega-footer .mdl-mega-footer--middle-section {
     display: flex;
     justify-content: space-between; }
-  .mdl-mega-footer .mdl-mega-footer--link-list li, .mdl-mega-footer .mdl-mega-footer__link-list li {
+  .mdl-mega-footer .mdl-mega-footer--link-list li,
+  .mdl-mega-footer .mdl-mega-footer--link-list a,
+  .mdl-mega-footer .mdl-mega-footer__link-list li,
+  .mdl-mega-footer .mdl-mega-footer__link-list a {
     font-size: 16px;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.4); }
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+    transition: color 200ms; }
+  .mdl-mega-footer .mdl-mega-footer--link-list a:hover {
+    color: rgba(255, 255, 255, 0.6); }
+  .mdl-mega-footer .mdl-mega-footer--heading {
+    font-size: 16px; }
+  .mdl-mega-footer .mdl-mega-footer--drop-down-section {
+    width: 30%; }
+  .mdl-mega-footer #instagram-logo polygon {
+    fill: #3c4858; }
+  .mdl-mega-footer .mdl-mega-footer--link-list .icon {
+    padding-right: 6px; }
+  .mdl-mega-footer .mdl-mega-footer--link-list .icon > svg {
+    width: 20px;
+    height: 20px; }
+
+.mdl-mega-footer--bottom-section {
+  text-align: center;
+  background-color: #192533;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300; }
+  .mdl-mega-footer--bottom-section b {
+    font-size: 11px;
+    color: #ff5252 !important; }
 
 #subscribe-modal {
   position: fixed;

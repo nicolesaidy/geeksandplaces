@@ -1,9 +1,9 @@
 ---
-layout: page
-title: About
+layout: post
+title: Our Story
 permalink: /about/
 ---
-###### A Jekyll theme based in Google Material Design Lite library.
+#### A Jekyll theme based in Google Material Design Lite library.
 
 This is the base Jekyll Material Design Lite theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
@@ -11,13 +11,13 @@ You can find the source code for the Jekyll MDL theme at: [github.com/gdg-managu
 
 You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
 
-###### Sites using jekyll-mdl
+#### Sites using jekyll-mdl
 
 If you are using this cool jekyll theme, please open an issue or fork the project, add your site to the list and send a pull request, we will be happy to know where the theme are using.
 
 [fandekasp.github.io](http://fandekasp.github.io/)
 
-###### Custom Themes
+#### Custom Themes
 
 If you don't want the default site colors, you can create custom themes for the site in the [mdl theme creator](http://www.getmdl.io/customize/index.html). The site will create a custom css, something like this:
 
@@ -25,7 +25,7 @@ If you don't want the default site colors, you can create custom themes for the 
 
 Now add this in the _includes/head.html file, under the main css and enjoy your new theme.
 
-###### Post Options
+#### Post Options
 
 All the post, require an image and maybe an author, the image are used in the cards and the autor used for the footer in the cards. For use the images and author, just add a new key in the post config, something like this:
 
@@ -38,7 +38,7 @@ All the post, require an image and maybe an author, the image are used in the ca
     author: Google Developers Group Managua
     ---
 
-###### Layout Configuration
+#### Layout Configuration
 You can setup 4 types of layout
 
     - Fixed Nav + Simple Card Grid
@@ -48,7 +48,7 @@ You can setup 4 types of layout
 
 For use this in the [_config.yml](https://github.com/gdg-managua/jekyll-mdl/blob/master/_config.yml) select the type of layout, rebuild the website and voilà :smile:
 
-###### Contributing
+#### Contributing
 If you want to contribute to this project, please read the [CONTRIBUTING](https://github.com/gdg-managua/jekyll-mdl/blob/master/CONTRIBUTING.md) file and perform the following steps
 
     # Fork this repository
@@ -61,7 +61,7 @@ If you want to contribute to this project, please read the [CONTRIBUTING](https:
     git push -u origin feature_branch
     # Send a pull request for your feature branch
 
-###### License
+#### License
 Licensed under the Apache 2.0 license.
 
 See the [LICENSE](https://github.com/gdg-managua/jekyll-mdl/blob/master/LICENSE.md) file for more details.

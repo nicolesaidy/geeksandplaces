@@ -1,14 +1,54 @@
 .mdl-mega-footer {
   background-color: #1f2d3d;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 30px 8px;
   .mdl-mega-footer--middle-section {
     display: flex;
     justify-content: space-between;
   }
-  .mdl-mega-footer--link-list li, .mdl-mega-footer__link-list li {
+  .mdl-mega-footer--link-list li,
+  .mdl-mega-footer--link-list a,
+  .mdl-mega-footer__link-list li,
+  .mdl-mega-footer__link-list a,  {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
     color: rgba(255,255,255,0.4);
+    font-weight: 300;
+    transition: color 200ms;
+  }
+
+  .mdl-mega-footer--link-list a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .mdl-mega-footer--heading {
+    font-size:  16px;
+  }
+  .mdl-mega-footer--drop-down-section {
+    width: 30%;
+  }
+  #instagram-logo polygon {
+    fill: #3c4858;
+  }
+  .mdl-mega-footer--link-list .icon {
+    padding-right: 6px;
+  }
+  .mdl-mega-footer--link-list .icon > svg {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+.mdl-mega-footer--bottom-section {
+  text-align: center;
+  background-color: #192533;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgba(255,255,255,0.4);
+  font-weight: 300;
+
+  b {
+    font-size: 11px;
+    color: rgb(255,82,82)!important;
   }
 }

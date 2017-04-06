@@ -3,6 +3,7 @@
   padding-right: 10px;
   font-size: 16px;
   font-weight: 400;
+  transition: color 200ms;
 }
 
 .navbar-menu a:last-child {
@@ -10,6 +11,23 @@
 }
 .navbar-menu a:hover {
   color: $grey-color !important;
+}
+
+#logo-text {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 12px;
+}
+
+#logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#logo-wrapper:hover {
+  #logo-text {
+    color: $grey-color !important;
+  }
 }
 
 .navbar-menu .mdl-color-text--accent:hover {

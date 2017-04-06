@@ -2,10 +2,12 @@
 // Generals styles for material design light elements
 //
 
-.content-wrapper {
+.cover-wrapper {
   background-color: white;
-  margin-bottom: -70px;
-  padding-bottom: 50px;
+  margin-bottom: -120px;
+  padding-bottom: 80px;
+      border-bottom-left-radius: 55% 40px;
+    border-bottom-right-radius: 55% 40px;
 }
 
 a {
@@ -137,7 +139,7 @@ body {
 }
 
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Lato', 'Helvetica', serif;
   font-weight: 700 !important;
   letter-spacing: -0.30px;
@@ -153,9 +155,7 @@ h3 {
   font-size: 28px !important;
   letter-spacing: -0.5px;
 }
-h5 {
-  font-weight: 300;
-}
+
 p {
   font-size: 18px;
   font-weight: 300;
